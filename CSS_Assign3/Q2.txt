@@ -1,0 +1,25 @@
+Absolute Positioning:
+
+Definition: When an element is set to absolute positioning, it is positioned relative to its nearest positioned ancestor (an ancestor with a position value other than static) or the initial containing block (usually the <html> element).
+Movement Impact: An absolutely positioned element is taken out of the normal document flow, meaning it doesn't affect the layout of surrounding elements, and it can overlap with other elements.
+Ex:
+.absolute-box {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+
+Relative Positioning:
+
+Definition: When an element is set to relative positioning, it is positioned relative to its normal position in the document flow. The element retains its space in the layout, and the positioning is adjusted based on this normal position.
+Movement Impact: Unlike absolute positioning, a relatively positioned element still affects the layout of surrounding elements. Other elements are positioned as if the relative positioned element were still in its normal place.
+Example:
+.relative-box {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+
+Absolute positioning is calculated relative to the nearest positioned ancestor or the initial containing block, and the element is taken out of the normal flow.
+
+Relative positioning is calculated relative to the element's normal position in the document flow, and it still occupies space in the layout.

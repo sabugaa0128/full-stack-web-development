@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Naming Example</title>
+
+    <style>
+        /* BEM Naming Convention */
+        
+        /* Block: paragraph */
+        .paragraph {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        /* Element: title inside the paragraph block */
+        .paragraph__title {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        /* Modifier: emphasized text inside the paragraph block */
+        .paragraph--emphasized {
+            background-color: #ffeeba;
+            font-weight: bold;
+        }
+
+        /* Modifier: highlighted text inside the paragraph block */
+        .paragraph--highlighted {
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Paragraph 1 with BEM classes -->
+    <div class="paragraph">
+        <h2 class="paragraph__title">Paragraph 1</h2>
+        <p>This is a regular paragraph.</p>
+    </div>
+
+    <!-- Paragraph 2 with emphasized text -->
+    <div class="paragraph paragraph--emphasized">
+        <h2 class="paragraph__title">Paragraph 2 (Emphasized)</h2>
+        <p>This paragraph has emphasized text.</p>
+    </div>
+
+    <!-- Paragraph 3 with highlighted text -->
+    <div class="paragraph paragraph--highlighted">
+        <h2 class="paragraph__title">Paragraph 3 (Highlighted)</h2>
+        <p>This paragraph has highlighted text.</p>
+    </div>
+
+    <!-- Paragraph 4 with both emphasized and highlighted text -->
+    <div class="paragraph paragraph--emphasized paragraph--highlighted">
+        <h2 class="paragraph__title">Paragraph 4 (Emphasized & Highlighted)</h2>
+        <p>This paragraph has both emphasized and highlighted text.</p>
+    </div>
+
+</body>
+</html>
