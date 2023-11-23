@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Example</title>
+</head>
+<body>
+
+    <h1>This is a Heading</h1>
+
+    <p>This is a paragraph of text in the HTML program. It can contain any relevant information or content you want to share. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis magnam excepturi sit ipsam distinctio, facilis expedita. Nemo odit itaque ratione!</p>
+
+    <hr> <!-- Horizontal Line -->
+
+    <br> <!-- Line Break -->
+
+</body>
+</html>
