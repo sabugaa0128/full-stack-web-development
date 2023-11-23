@@ -1,0 +1,75 @@
+grid-auto-row: This property sets the size of implicitly created rows in the grid.
+
+grid-auto-column: This property sets the size of implicitly created columns in the grid.
+
+Example 1: Using grid-auto-row
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 100px 100px;
+      grid-auto-rows: 50px; /* Set the size of implicitly created rows */
+    }
+
+    .grid-item {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+</div>
+
+</body>
+</html>
+
+In this example, the grid has explicitly defined two columns (grid-template-columns: 100px 100px;), but the rows are implicitly created with a height of 50px each (grid-auto-rows: 50px;).
+
+
+Example 2: Using grid-auto-column
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-rows: 100px 100px;
+      grid-auto-columns: 50px; /* Set the size of implicitly created columns */
+    }
+
+    .grid-item {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+</div>
+
+</body>
+</html>
+
+In this example, the grid has explicitly defined two rows (grid-template-rows: 100px 100px;), but the columns are implicitly created with a width of 50px each (grid-auto-columns: 50px;).
+

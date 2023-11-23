@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 500px;
+            /* background-color: gray; */
+            display: grid;
+            grid-template-areas: 
+                'HEADER HEADER HEADER1'
+                'MENU MAIN RIGHT'
+                'MENU MAIN1 RIGHT'
+            ;
+            row-gap: 5px;
+            column-gap: 5px;
+        }
+
+        .header {
+            grid-area: HEADER;
+            background-color: yellow;
+            background-image: url(./3.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .menu {
+            grid-area: MENU;
+            background-color: green;
+            background-image: url(./1.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .main {
+            grid-area: MAIN;
+            background-color: orange;
+            background-image: url(./4.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .main1 {
+            grid-area: MAIN1;
+            background-color: chartreuse;
+            background-image: url(./4.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .right {
+            grid-area: RIGHT;
+            background-color: blue;
+            background-image: url(./2.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .footer {
+            grid-area: HEADER1;
+            background-color: red;
+            background-image: url(./5.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="menu"></div>
+        <div class="main"></div>
+        <div class="main1"></div>
+        <div class="right"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
