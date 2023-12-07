@@ -1,0 +1,16 @@
+Semantic HTML:
+
+Use semantic elements such as <header>, <nav>, <main>, <article>, <section>, <aside>, and <footer> to provide a clear document structure.
+Headings and Landmarks:
+
+Use proper heading tags (<h1>, <h2>, etc.) to create a hierarchical structure. Headings help screen reader users navigate and understand the content. Additionally, use landmark roles (<nav>, <main>, <form>, etc.) to identify major sections.
+Alternative Text for Images:
+
+Include descriptive alternative text for images using the alt attribute. This is essential for users who rely on screen readers.
+
+Accessible Forms:
+
+Use proper form labels and include helpful instructions. Ensure that form controls are keyboard accessible and test the form using a screen reader.
+Keyboard Accessibility:
+
+Ensure that all interactive elements can be operated using a keyboard alone. Test the tab order and make sure that focus is visually noticeable.

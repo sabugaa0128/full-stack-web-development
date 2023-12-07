@@ -1,0 +1,49 @@
+Semantic Elements:
+
+<article>, <section>, <header>, <footer>, <nav>, <aside>, and <main> provide more semantic meaning to the structure of a webpage.
+New Form Elements:
+
+<input> types such as email, url, tel, number, and date facilitate better input validation and user experience.
+<datalist> allows the creation of predefined options for input fields.
+<output> displays the result of a calculation.
+Audio and Video Support:
+
+<audio> and <video> elements for embedding media content with native controls.
+<source> inside <audio> and <video> for specifying multiple media sources.
+Canvas:
+
+<canvas> element allows dynamic rendering of graphics, charts, and animations using JavaScript.
+Local Storage:
+
+localStorage and sessionStorage APIs provide a way to store data on the client-side persistently or for the duration of a page session.
+Web Storage:
+
+localStorage and sessionStorage provide a way to store key-value pairs locally in a user's browser.
+Web Workers:
+
+Web Workers enable the execution of JavaScript code in the background, allowing for parallel processing and improved performance.
+Geolocation:
+
+The Geolocation API allows websites to access a user's location information.
+Responsive Images:
+
+The <picture> and <source> elements enable the use of responsive images, loading different images based on screen size or resolution.
+Drag and Drop:
+
+Native support for drag-and-drop functionality using the draggable attribute and related events.
+WebSockets:
+
+The WebSocket API allows bidirectional communication between the browser and the server, enabling real-time updates.
+Offline Web Applications:
+
+The Application Cache (AppCache) allows web applications to work offline or in low-network conditions.
+New Structural Elements:
+
+<nav>, <section>, <article>, <header>, <footer>, <aside>, <main>, and <figure> enhance the structural semantics of web pages.
+Improved Accessibility:
+
+ARIA (Accessible Rich Internet Applications) attributes enhance accessibility for users with disabilities.
+New Input Types and Attributes:
+
+<input> elements with new types such as color, range, search, time, datetime-local, etc.
+New attributes like autocomplete, autofocus, placeholder, and more.
