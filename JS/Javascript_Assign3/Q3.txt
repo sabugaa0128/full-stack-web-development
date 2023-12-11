@@ -1,0 +1,227 @@
+In English the word Loop suggests a shape produced by a curve that bends round and crosses itself. From the similar concept the word Loop has been included in programming world. If you see the diagram below, it will be clear to you how the flow of instruction is getting repeated accordingly in a round motion crossing itself again and again.
+
+The concept of loops aren’t new in programming, they are used every now and then while coding. Though the syntax varies language to language but the basic concept remains the same; repeating the same block of code according to the need. JavaScript has increased the looping categories (by including various types of loops) and made working with them more comfortable and efficient. In this article we will be learning about all the loops available in JavaScript.
+
+Definition of Loop
+In computer programming Loop is a process that repeats a particular block of code for a valid condition.
+
+List of Loos in JavaScript
+There are 7 kind of loops you will find in JavaScript. We have listed them in an order that will help you to get a clear view about their working process and usage. This article will also help you to differentiate between all these 7 loops like where, when or how you should use them. So let’s start.
+
+while
+do-while
+for
+forEach()
+map()
+for…in
+for…of
+
+while loop
+while loop is one of the most basic kind of loops available in JS. If JavaScript is not the only programming language you know, you must have heard about this one already.
+
+The while statement generates a loop that gets executed over a particular block of statement (code) as long as the condition is true. Every time before executing the block of code the condition gets checked.
+
+Syntax
+while (condition) {
+  Block of code
+}
+Example
+var i=8;
+while (i<10){
+ console.log("I is less than 10");
+ i++;
+}
+Output
+
+I is less than 10
+I is less than 10
+... 10 times
+In the above example, the condition is getting checked if the value of i is less than 10 or not. If the condition is true, the block of code gets executed and before iterating next time the value of i is getting increases by 1 as we’ve added a statement i++.
+
+do-while
+do-while loop is slightly different from while as it includes one extra feature. In case of do-while loop, the block of code gets executed at least once and if further the condition satisfies the code block will be executed accordingly.
+
+Syntax
+do {
+    Block of code
+ }
+while (condition);
+Example
+var i=7;
+do{
+    console.log("The value of i is " + i);
+    i++;
+}
+while(i>7 && i<10);
+Output
+
+The value of i is 7
+The value of i is 8
+The value of i is 9
+As you can see the condition is- *the value of i is greater than 7 but less than 10; but in output the value of i=7 has been printed. Because this looping technique first do execute the code irrespective of the condition and then compares the condition from 2nd round of execution. For all the true condition from the 2nd looping round the code block will be executed.
+
+for loop
+The while loop and the for loop works exactly same, even the execution time doesn’t differ much. So what is the need of another looping system that delivers same functionality?
+well, in case of for loop the declaration & initialization of looping variable, condition checking & increment or decrements of the looping variable can be done in the same line. It increases the readability & reduces the chances of error.
+
+Syntax
+for ([initialization];[condition];[final-expression]){
+   Block of code
+}
+Example
+for (var i=0; i<10; i++){
+    console.log("The Value of i Is " + i);
+}
+Output
+
+The Value of i Is 0
+The Value of i Is 1
+...
+The Value of i Is 9
+Take a look at the above example, the initialization, condition & increment has been declared in a single line. It’s easier to understand and better readable. Isn’t it ?
+
+The use of for loop is exactly same as the while loop as i said. But to make the code better readable & understanding most of the time we use for loop instead of while.
+
+forEach()
+It is a prototypal method of Array (Even Map and Set). The forEach() method calls a given function/callback every time with each element in an array, according to the index order. Take note, forEach() does not run the given function for array elements having no values.
+
+Syntax
+arrayName.forEach(function(currentValue, index, array){
+    function body
+})
+The forEach() method takes a function as an argument. The function consists of three parameters mentioned above.
+
+the currentValue holds the present value being processed.
+the index variable holds the index of the value in that particular array.
+and the array variable holds the total array passed.
+
+You can iterate over a set using forEach().
+map can also be iterated using forEach() method.
+Let’s understand from a simple example.
+
+Example
+var arr=[10, 20, "hi", ,{}];
+
+arr.forEach(function(item, index){
+    console.log(' arr['+index+'] is '+ item);
+});
+Output
+
+arr[0] is 10
+arr[1] is 20
+arr[2] is hi
+arr[4] is [object Object]
+The forEach() method is iterating over the arr array. If you have no use of the index, you can only use arr.forEach(function(item){}).The parameters can be used accordingly, you don’t have to mention all three every time.
+
+The use of forEach() method has made iterating over an array very simple. We don’t have to worry about looping variable, conditions or anything else, it will take care of all the matters for iterating.
+
+How is forEach different than for
+You can simply iterate over an array using a simple for loop which starts from 0 and runs till the length of that array. Then why they came up with a different forEach?
+A rule of thumb is, if you have the option of using a prototypal method; you should use that. Because, the prototypal method knows that object better and is optimized for the best usage. Below is an example to describe the difference.
+
+var arr = [];
+arr[0]=0;
+arr[3000]=3000;
+
+for(var i=0; i
+If you run the code above, you will find that the I am for is printed 3001 times, whereas I am forEach is only printed twice. The reason is, a for loop is a simple for loop; with no knowledge about the purpose it’s being used for. So, it simply ran from zero to the length of arr. However, when you used forEach, it knew that arr only have two elements, though the length is 3001. Thus, it actually iterated twice only.
+
+So depending on this, if you wanna skip heavy works in a loop white iterating an iterable, you should use forEach. However the iteration time of just iterating (same number of iterations) is lesser in for comparing to for loop. So iteration performance is better in case of for.
+
+map()
+map is another prototypal method of Array. The map() method creates a new array having the returned values generated by a function execution over a given array.
+
+Syntax
+var newArray= oldArray.map(function (currentValue, index, array){
+    //Return element for the newArray
+});
+The map() method takes a function as a argument, the function having three parameters.
+
+The currentValue is the current element being processed in the array.
+The index is the index of the current element being processed in the array.
+And array is the array map was called upon.
+
+Example
+var num = [1, 5, 10, 15];
+var doubles = num.map(function(x) {
+   return x * 2;
+});
+In the above example the new array named doubles will be filled with the outputs doubles=[2, 10, 20, 30] and num array is still [1, 5, 10, 15].
+
+for…in
+This one has been developed mainly to iterate over the properties of an object. The for...in statement iterates over the enumerable properties of an object. For each distinct property, statements can be executed.
+As we know array is also a special kind of object, so don’t think array’s can’t be iterate using this for...in loop.
+
+Syntax
+for (variableName in object) {
+    Block of code
+}
+Example
+var obj = {a: 1, b: 2, c: 3};    
+for (var prop in obj) {
+    console.log('obj.'+prop+'='+obj[prop]);
+};
+Output
+
+obj.a=1
+obj.b=2
+obj.c=3
+Why array iteration using for...in loop is not preferable?
+for...in should not be used for Array iteration specially where the order of the index is important.
+Actually there is no difference between array indexes and a general object property, array indexes are just enumerable properties.
+
+The for...in won’t return the indexes in any particular order every time. for...in iterate This loop will return all enumerable properties, including those with non–integer names and those that are inherited.
+
+So it is recommended to use for or forEach() while iterating over an array. Because the order of iteration is implementation-dependent and iterating over an array may not visit elements in a consistent order in case of for...in.
+
+var arr = [];
+arr[2] = 2;
+arr[3] = 3;
+arr[0] = 0;
+arr[1] = 1;
+Using forEach() in this case will give an output 0, 1, 2, 3 where for...in it doesn’t guarantee anything.
+
+One more thing you should keep in mind while using for...in is, it iterates on all properties of the object; including the inherited ones (from parent class). If you just want to iterate on the object’s own properties, you should do something like the following.
+
+for(var prop in obj){
+    if(obj.hasOwnProperty(prop)){
+        Code block here
+    }
+}
+for…of
+This one is the most recent looping type included in JS, introduced in ES6. Using for...of statement you can iterate over any iterable object like Array, String, Map, WeakMap, Set, WeakSet, arguments object, TypedArray and even general objects (pojo).
+
+Syntax
+for (variable of iterable) {
+  Block of code
+}
+
+Example
+var str= 'paul';
+for (var value of str) {
+console.log(value);
+}
+Output
+
+"p"
+"a"
+"u"
+"l"
+Iterating over map
+
+let itobj = new Map([['x', 0], ['y', 1], ['z', 2]]);
+
+for (let kv of itobj) {
+  console.log(kv);
+}
+// ['x', 0]
+// ['y', 1]
+// ['z', 2]
+
+for (let [key, value] of itobj) {
+  console.log(value);
+}
+
+//0
+//1
+//2
