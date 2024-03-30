@@ -1,0 +1,65 @@
+What are conditional statements? Explain conditional statements with syntax and examples.
+
+Conditional statements are programming constructs that allow a program to make decisions based on certain conditions. These conditions are typically expressed as logical expressions that evaluate to either true or false. Depending on whether the condition is true or false, the program will execute different blocks of code.
+
+There are mainly three types of conditional statements in most programming languages: if statements, if-else statements, and if-else-if ladder statements.
+
+If statement:
+An if statement checks a condition and executes a block of code if the condition is true. If the condition is false, the block of code is skipped.
+
+Syntax:
+if (condition) {
+    // code block to execute if condition is true
+}
+ 
+Example:
+let number = 10;
+if (number > 0) {
+    console.log("Number is positive.");
+}
+
+
+If-else statement:
+An if-else statement checks a condition and executes one block of code if the condition is true, and another block of code if the condition is false.
+
+Syntax:
+if (condition) {
+    // code block to execute if condition is true
+} else {
+    // code block to execute if condition is false
+}
+
+Example:
+
+let temperature = 25;
+if (temperature > 30) {
+    console.log("It's hot outside.");
+} else {
+    console.log("It's not too hot outside.");
+}
+
+If-else-if ladder statement:
+An if-else-if ladder statement checks multiple conditions one by one until a true condition is found. If none of the conditions are true, an optional else block can be executed.
+
+Syntax:
+if (condition1) {
+    // code block to execute if condition1 is true
+} else if (condition2) {
+    // code block to execute if condition2 is true
+} else {
+    // code block to execute if none of the conditions are true
+}
+
+Example:
+let score = 85;
+if (score >= 90) {
+    console.log("Grade: A");
+} else if (score >= 80) {
+    console.log("Grade: B");
+} else if (score >= 70) {
+    console.log("Grade: C");
+} else if (score >= 60) {
+    console.log("Grade: D");
+} else {
+    console.log("Grade: F");
+}

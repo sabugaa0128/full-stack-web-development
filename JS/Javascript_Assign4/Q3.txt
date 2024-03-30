@@ -1,0 +1,45 @@
+Loops are programming constructs that allow you to repeat a block of code multiple times. They are used when you want to perform the same or similar tasks repeatedly without writing the code multiple times. Loops are essential for automating repetitive tasks and iterating over collections of data such as arrays or objects. In JavaScript, there are mainly three types of loops: for loop, while loop, and do-while loop.
+
+For loop:
+The for loop is used when you know exactly how many times you want to repeat a block of code. It consists of three parts: initialization, condition, and iteration.
+
+Syntax:
+for (initialization; condition; iteration) {
+    // code block to repeat
+}
+
+Ex:
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+While loop:
+The while loop is used when you want to repeat a block of code as long as a condition is true. The condition is checked before each iteration.
+
+Syntax:
+while (condition) {
+    // code block to repeat
+}
+
+Ex:
+let count = 0;
+while (count < 5) {
+    console.log(count);
+    count++;
+}
+
+Do-while loop:
+The do-while loop is similar to the while loop, but the condition is checked after each iteration. This means that the block of code is guaranteed to execute at least once, even if the condition is initially false.
+
+Syntax:
+do {
+    // code block to repeat
+} while (condition);
+
+Ex:
+let num = 5;
+do {
+    console.log(num);
+    num--;
+} while (num > 0);
+
